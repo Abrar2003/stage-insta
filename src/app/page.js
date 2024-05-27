@@ -10,7 +10,7 @@ export default function Home() {
   const [ stories, setStories ] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:8008/api/users').then(response => setStories(response.data));
+    axios.get('https://stage-insta.onrender.com//api/users').then(response => setStories(response.data));
   }, [showStories, setShowStories])
 
   const openStories = () => {
